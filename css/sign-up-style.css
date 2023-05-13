@@ -228,7 +228,7 @@ a:hover {
     
     @media (max-width: 767px) {
         .center {
-            width: 600px ;
+            width:80% ;
         }
 
         form .field {
