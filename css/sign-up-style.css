@@ -23,7 +23,7 @@ body {
 }
 .center form {
     box-sizing: border-box;
-    padding: 0 2.2em;
+    padding: 0 15px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -232,7 +232,7 @@ a:hover {
         }
         .center {
             margin: 40px 0;
-            width: 85%;
+            width: 93%;
         }
 
         form .field {
