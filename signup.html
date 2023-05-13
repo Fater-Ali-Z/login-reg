@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register</title>
+    <link rel="stylesheet" href="css/sign-up-style.css">
+    <link rel="stylesheet" href="./bootstrap/css/all.min.css">
+</head>
+<body>
+    <div class="center">
+        <h2>Sign Up</h2>
+        <form action="login.html" method="POST" class="sign-up" name="myForm">
+            
+            <div class="field">
+                <div class="txt">
+                    <input type="text" id="first-name" name="uFirstName" onkeyup="firstNameV()" onmousedown="firstNameV()" required>
+                    <span></span><label> First Name</label>       
+                </div>
+                <p class="conferm" id="cnfrmFN">test</p>
+            </div>
+            <div class="field">                
+                <div class="txt">
+                <input type="text" id="last-name" onkeyup="lastNameV()" onmousedown="lastNameV()" required>
+                <span></span><label> Last Name</label>       
+            </div>
+            <p class="conferm" id="cnfrmLN">test</p>
+        </div>
+            <div class="field">
+                <div class="txt">
+                    <input type="number" id="age" onkeyup="ageV()" onmousedown="ageV()" required>
+                    <span></span><label> Age</label>       
+                </div>
+                <p class="conferm" id="cnfrmAge">test</p>
+
+            </div>
+            <div class="field">
+
+                <div class="txt">
+                    <input type="text" id="email" onkeyup="emailV()" onmousedown="emailV()" required>
+                    <span></span><label> Email</label>       
+                </div>
+                <p class="conferm" id="cnfrmEmail">test</p>
+            </div>
+            <div class="field">
+                <div class="txt">
+                    <input type="password" id="pwd1" onkeyup="pwdV()" onmousedown="pwdV()" required>
+                    <span></span><label> Password</label>
+                </div>
+            </div>
+            <div class="field">
+
+                <div class="txt re-pwd">
+                    <input type="password" id="pwd2" onkeyup="pwdV()" onmousedown="pwdV()" required>
+                    <span></span><label> Re-Enter Password</label>
+                </div>
+                <p class="conferm" id="cnfrmPwd">test</p>
+            </div>
+
+            <label class="container">
+                <input type="checkbox" id="check">
+                <span class="checkmark"></span> By signing up to SurveyMe, you agree to our Terms of Service and Privacy Policy.
+            </label>
+
+            <div class="login">
+                <input type="submit" value="login" >
+            </div>
+                
+            <div class="signup">
+                <label>Already have an account?</label>
+                <a href="index.html"> Log In</a>
+            </div>    
+            
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

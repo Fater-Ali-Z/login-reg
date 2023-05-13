@@ -1,0 +1,162 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg , #2980b9 , #8e44ad);
+    background-attachment: fixed;
+
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50% , -50%);
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.center h2 {
+    text-align: center;
+    padding: 0.8em 0 ;
+    border-bottom: 2px solid silver;
+    color: rgb(0, 123, 255);
+}
+.center form {
+    box-sizing: border-box;
+    padding: 0 2.2em;
+}
+form .txt {
+    position: relative;
+    border-bottom: 2px solid silver;
+    margin: 2em 0;
+}
+
+form .re-pwd {
+    margin-bottom: 10px;
+}
+form .conferm {
+    font-size: 14px;
+    color: red;
+    display:flex;
+    display: none;
+    
+
+}
+form .conferm span{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+
+}
+
+
+.txt input {
+    width: 100%;
+    height: 2.5em;
+    font-size: 1em;
+    border:none;
+    outline: none;
+}
+.txt label {
+    position:absolute;
+    top:50%;
+    left: 3%;
+    color: #adadad;
+    transform:translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+
+}
+
+form input[type=submit] {
+    border-radius: 10px;
+    padding: 0.5em;
+    margin: 0.8em 2em 2em 1.8em;
+    width: 75%;
+    border: none;
+    background-color: rgb(0, 123, 255);
+    font-size: 1.2em;    
+    color:white;
+    transition-duration: 0.2s;
+}
+
+.txt span::before {
+    content: '';
+    position: absolute;
+    top:42px;
+    left:0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #2980b9 , #ff0000);
+    transition: 0.5s;
+}
+.sign-up .txt span::before {
+    top:42px;
+}
+
+.txt input:focus ~ label,
+.txt input:valid ~ label {
+    top: -5px;
+    color: rgb(0, 123, 255) ;
+    
+}
+
+.txt input:focus ~ span::before,
+.txt input:valid ~ span::before {
+    width: 100%;
+} 
+.center input[type=submit]:hover {
+    background-color: rgb(2, 102, 209);
+    box-shadow: rgba(0, 123, 255, 0.423) 0 4px 1px;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+
+}
+.center input[type=submit]:focus {
+   
+    box-shadow: rgb(3 68 138/75%) 0 0px 1px;
+    transform: translateY(3px);
+}
+.fp a {
+    text-decoration: none;
+    color: rgb(0, 123, 255);
+    
+}
+.fp {
+   margin-bottom: 20px;
+}
+.signup {
+    font-size: 14px;
+    text-align: center;
+    color:rgb(0, 44, 90) ;
+    margin-bottom: 20px;
+}
+.signup a {
+    text-decoration: none ;
+    color: rgb(0, 123, 255);
+}
+a:hover {
+    color: rgb(235, 13, 57);
+}
+
+.fp .lbl-terms {
+    color: #747474;
+}
+
+
+@media (max-width: 767px) {
+    .center {
+        width: 550px ;
+    }
+
+    
+
+}

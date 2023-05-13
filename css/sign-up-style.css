@@ -1,0 +1,240 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg , #2980b9 , #8e44ad);
+    background-attachment: fixed;
+
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50% , -50%);
+    width: 650px;
+    background-color: white;
+    border-radius: 10px;
+   
+
+}
+.center h2 {
+    text-align: center;
+    padding: 0.8em 0 ;
+    border-bottom: 2px solid silver;
+    color: rgb(0, 123, 255);
+}
+.center form {
+    box-sizing: border-box;
+    padding: 0 2.2em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+form .field {
+    width: calc((100% / 2) - 20px);
+    margin: 15px 10px;
+
+}
+form .txt {
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid silver;
+}
+
+form .conferm {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    margin: 10px 0 10px 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+form .conferm i{
+    margin-right: 5px;
+}
+
+
+.txt input {
+    width: 100%;
+    height: 2.5em;
+    font-size: 1em;
+    border:none;
+    outline: none;
+}
+.txt label {
+    position:absolute;
+    top:50%;
+    left: 3%;
+    color: #adadad;
+    transform:translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+
+}
+
+form .login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input[type=submit] {
+    border-radius: 10px;
+    padding: 0.5em;
+    margin:10px 0 20px;
+    width: 70%;
+    border: none;
+    background-color: #007bff;
+    font-size: 1.2em;    
+    color:white;
+    transition-duration: 0.2s;
+}
+
+.txt span::before {
+    content: '';
+    position: absolute;
+    top:40px;
+    left:0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #2980b9 , #ff0000);
+    transition: 0.5s;
+}
+.sign-up .txt span::before {
+    top:42px;
+}
+
+.txt input:focus ~ label,
+.txt input:valid ~ label {
+    top: -5px;
+    color: rgb(0, 123, 255) ;
+    
+}
+
+.txt input:focus ~ span::before,
+.txt input:valid ~ span::before {
+    width: 100%;
+} 
+.center input[type=submit]:hover {
+    background-color: rgb(2, 102, 209);
+    box-shadow: rgba(0, 123, 255, 0.423) 0 4px 1px;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+
+}
+.center input[type=submit]:focus {
+   
+    box-shadow: rgb(3 68 138/75%) 0 0px 1px;
+    transform: translateY(3px);
+}
+.fp a {
+    text-decoration: none;
+    color: rgb(0, 123, 255);
+    
+}
+.fp {
+   margin-bottom: 20px;
+}
+.signup {
+    font-size: 14px;
+    text-align: center;
+    color:rgb(0, 44, 90) ;
+    margin-bottom: 20px;
+}
+.signup a {
+    text-decoration: none ;
+    color: rgb(0, 123, 255);
+}
+a:hover {
+    color: rgb(235, 13, 57);
+}
+
+.fp .lbl-terms {
+    color: #747474;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+    .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 7px;
+    transition: .2s;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkmark {
+    background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .container input:checked ~ .checkmark {
+    /* background-color: #2196F3; */
+    background: linear-gradient(120deg , #2980b9 , #8e44ad);
+    
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+    /* Show the checkmark when checked */
+    .container input:checked ~ .checkmark:after {
+    display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
+
+    /*----------------------------------------------------------------------------------------------*/
+    
+    @media (max-width: 767px) {
+        .center {
+            width: 600px ;
+        }
+
+        form .field {
+           width: 100%;
+           margin: 10px;
+        
+        }
+    
+    }
