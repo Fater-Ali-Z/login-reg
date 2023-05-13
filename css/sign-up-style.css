@@ -234,7 +234,9 @@ a:hover {
             margin: 40px 0;
             width: 93%;
         }
-
+        .center form {
+            padding: 0 5px;
+        }
         form .field {
            width: 100%;
            margin: 10px;
