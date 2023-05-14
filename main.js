@@ -92,5 +92,7 @@ document.forms[0].onsubmit = function (e) {
     document.getElementById("check").checked === false
   ) {
     e.preventDefault();
+  } else {
+   window.location.href = 'index.html'; 
   }
 };
